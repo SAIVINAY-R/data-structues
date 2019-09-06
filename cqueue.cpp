@@ -27,10 +27,12 @@ cout << "QUEUE is underflow\n";
 void display() {
 if(count != 0){
 cout << "The QUEUE is : \n";
+int j = 0;
 int i = front;
-while(i != rear){
+while(j < count){
 i = (i + 1)%MAX;
 cout << "--->> " << a[i] << endl;
+j++;
 }
 }else
 cout << "QUEUE is empty\n";
